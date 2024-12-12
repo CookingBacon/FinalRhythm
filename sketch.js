@@ -37,7 +37,8 @@ function videoEnded(){
 
 
 function setup() {
-  createCanvas(1200, 800);
+  var canvas = createCanvas(1200, 800);
+  canvas.parent("owo");
   targetX = width - 350;
   bgVideo.hide();
   bgVideo.onended(videoEnded); 
@@ -347,7 +348,7 @@ if(!opening.isPlaying()){
   textAlign(CENTER);
   text("Click mouse to play", width/2 + 150, 470);
   textSize(100);
-  text("Rhythm Game", width/2, 365);
+  text("Final Rhythm X", width/2, 365);
 }
 
 function rhythmGame() {
